@@ -1,0 +1,9 @@
+CREATE WAREHOUSE IF NOT EXISTS SALES_WH
+WITH
+    WAREHOUSE_SIZE = 'MEDIUM'
+    AUTO_SUSPEND = 60
+    AUTO_RESUME = TRUE
+    INITIALLY_SUSPENDED = TRUE
+    COMMENT = 'Warehouse used for the Snowflake Medallion Pipeline project';
+
+USE WAREHOUSE SALES_WH;
