@@ -36,7 +36,7 @@ Gold (dbt)
 - ✅ Configure Storage Integration
 - ✅ Create External Stage
 - ✅ Configure Snowpipe
-- ✅ Load data into Bronze layer
-- ⏳ Snowpark data cleansing
+- ✅ Load data into Bronze layer (`RAW_SALES`)
+- ✅ Standardize data using Snowpark (`CLEAN_SALES`)
 - ⏳ Silver layer (dbt)
 - ⏳ Gold layer (dbt)
