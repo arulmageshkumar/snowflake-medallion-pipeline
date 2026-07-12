@@ -2,7 +2,11 @@
 
 ## Overview
 
-An end-to-end data engineering project demonstrating automated data ingestion and transformation using Amazon S3, Snowpipe, Snowpark, and dbt following the Medallion Architecture.
+This project demonstrates an end-to-end data engineering pipeline built on Snowflake using the Medallion Architecture.
+
+A fictional e-commerce application generates a daily sales file containing both new orders and updates to existing orders. The file is uploaded to Amazon S3, where Snowpipe automatically ingests the data into the Bronze layer.
+
+Snowpark standardizes the incoming data without applying business rules. A dbt incremental model then merges new and updated records into the Silver layer, while the Gold layer provides aggregated reporting and analytics.
 
 ## Architecture
 
@@ -38,5 +42,9 @@ Gold (dbt)
 - ✅ Configure Snowpipe
 - ✅ Load data into Bronze layer (`RAW_SALES`)
 - ✅ Standardize data using Snowpark (`CLEAN_SALES`)
-- ⏳ Silver layer (dbt)
-- ⏳ Gold layer (dbt)
+- ✅ dbt source() configuration
+- ✅ dbt staging model
+- ✅ dbt incremental Silver model (MERGE)
+- ⏳ Gold analytics models
+- ⏳ dbt tests
+- ⏳ Documentation & lineage

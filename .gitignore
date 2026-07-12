@@ -1,0 +1,11 @@
+# -----------------------------
+# dbt generated files
+# -----------------------------
+snowflake_medallion/target/
+snowflake_medallion/logs/
+snowflake_medallion/dbt_packages/
+
+# -----------------------------
+# Root project logs
+# -----------------------------
+logs/
